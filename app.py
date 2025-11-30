@@ -7,13 +7,24 @@ app = Flask(__name__)
 CORS(app)
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-MODELS_DIR = os.path.abspath(os.path.join(BASE, "..", "models"))
-BEST_MODEL_PATH = os.path.join(MODELS_DIR, "best_model.joblib")
-META_PATH = os.path.join(MODELS_DIR, "model_meta.joblib")
-SCHEMA_PATH = os.path.join(MODELS_DIR, "feature_schema.json")
 
-if not os.path.exists(BEST_MODEL_PATH):
-    raise RuntimeError("best_model.joblib not found. Run training first.")
+# Try: models folder next to root (Render)
+PATH_RENDER = os.path.join(BASE, "best_model.joblib")
+
+# Try: ../models folder (your local training structure)
+PATH_LOCAL = os.path.join(BASE, "..", "models", "best_model.joblib")
+
+# Auto select which exists
+if os.path.exists(PATH_RENDER):
+    BEST_MODEL_PATH = PATH_RENDER
+    META_PATH = os.path.join(BASE, "model_meta.joblib")
+    SCHEMA_PATH = os.path.join(BASE, "feature_schema.json")
+elif os.path.exists(PATH_LOCAL):
+    BEST_MODEL_PATH = PATH_LOCAL
+    META_PATH = os.path.join(BASE, "..", "models", "model_meta.joblib")
+    SCHEMA_PATH = os.path.join(BASE, "..", "models", "feature_schema.json")
+else:
+    raise RuntimeError("best_model.joblib not found in neither local nor Render paths.")
 
 best_model = joblib.load(BEST_MODEL_PATH)
 meta = joblib.load(META_PATH)  # features, mapped_features, age_bins, stress_map
