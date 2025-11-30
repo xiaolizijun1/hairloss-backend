@@ -1,42 +1,9 @@
-blinker==1.9.0
-Brotli @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d7pp3g74_g/croot/brotli-split_1736182638718/work
-click==8.3.1
-cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/cloudpickle_1762167566647/work
-colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
-contourpy @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_6236u4rf19/croot/contourpy_1732540057596/work
-cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
-Flask==3.1.2
-flask-cors==6.0.1
-fonttools @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_706ove9ndu/croot/fonttools_1737039799828/work
-gunicorn==23.0.0
-imbalanced-learn==0.14.0
-itsdangerous==2.2.0
-Jinja2==3.1.6
-joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1756321760188/work
-kiwisolver @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_92lgswl3y6/croot/kiwisolver_1737040154211/work
-lightgbm @ file:///D:/bld/liblightgbm_1760992675766/work
-llvmlite==0.44.0
-MarkupSafe==3.0.3
-matplotlib==3.10.8
-numba @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_63dqx6gx7k/croot/numba_1750798176441/work
-numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1747544610608/work/dist/numpy-2.2.6-cp310-cp310-macosx_10_13_x86_64.whl#sha256=11cc21c326fa6386ceb48e396557886bf55226b93cb330d1e1eab3a6a9968215
-packaging @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_95hd3yozva/croot/packaging_1753775365688/work
-pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1759265710307/work
-Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1675487347214/work
-pyparsing @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_32bhy1idl3/croot/pyparsing_1731445537860/work
-python-dateutil @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_efk5_uakg8/croot/python-dateutil_1716495742183/work
-pytz @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_11bbnopadc/croot/pytz_1752135868440/work
-scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1757406211361/work/dist/scikit_learn-1.7.2-cp310-cp310-macosx_10_13_x86_64.whl#sha256=7670b5ab1128eb57615b8afa9fa4752b8b7c550fcc15402114204006789a0ca8
-scipy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1bvg93f7ku/croot/scipy_1747238043368/work/dist/scipy-1.15.3-cp310-cp310-macosx_10_15_x86_64.whl#sha256=15cbd3251181d4cc3f52115c248f6fe6ba10b2d57462acc3a4e7fc5c4003a1a5
-seaborn @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_62cjug4ik_/croot/seaborn_1749110302963/work
-shap @ file:///Users/runner/miniforge3/conda-bld/shap_1750151464278/work
-six @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_2e3n1z57yz/croot/six_1744271514562/work
-slicer @ file:///home/conda/feedstock_root/build_artifacts/slicer_1710029110974/work
-threadpoolctl @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_83z9rmqojb/croot/threadpoolctl_1719407811780/work
-tornado @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_53i9d3wys5/croot/tornado_1748956943199/work
-tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1735661334605/work
-typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
-tzdata @ file:///croot/python-tzdata_1746123641790/work
-unicodedata2 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_c9zunc70re/croot/unicodedata2_1736544422992/work
-Werkzeug==3.1.3
-xgboost @ file:///home/conda/feedstock_root/build_artifacts/xgboost-split_1764148542415/work/python-package
+Flask==3.1.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+numpy==1.26.0
+pandas==2.1.1
+scikit-learn==1.3.2
+joblib==1.3.2
+xgboost==1.7.6
