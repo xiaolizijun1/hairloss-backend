@@ -37,6 +37,11 @@ hairloss-frontend/
 
 ## ML Pipeline
 
+## Dataset
+**Source:** [Hair Loss Factors Dataset](https://www.kaggle.com/code/ayaabdalsalam/hair-loss-analysis/input?scriptVersionId=217216355) via Kaggle
+Features include age, stress level, genetics, and other lifestyle indicators.
+Model is pre-trained（best_model.joblib） — clone the repo and run directly without re-downloading data.
+
 ### Models Compared
 Three classifiers were trained and evaluated on the same dataset:
 
