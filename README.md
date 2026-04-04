@@ -25,7 +25,8 @@ hairloss-backend/
 ├── model_meta.joblib       # Preprocessing metadata & encoders
 ├── feature_schema.json     # Input feature schema for validation
 ├── models/                 # Model training experiments
-└── requirements.txt
+|── training/train_classification.py
+├── requirements.txt
 
 hairloss-frontend/
 ├── src/
@@ -45,11 +46,16 @@ Model is pre-trained（best_model.joblib） — clone the repo and run directly 
 ### Models Compared
 Three classifiers were trained and evaluated on the same dataset:
 
-| Model | Notes |
-|-------|-------|
-| Decision Tree | Baseline interpretable model |
-| Random Forest | Ensemble baseline |
-| **XGBoost** | **Best F1-score — selected for production** |
+## Results
+
+| Model | Recall | Precision | F1 |
+|-------|--------|-----------|-----|
+| Decision Tree | 0.544 | 0.497 | 0.519 |
+| Random Forest | 0.557 | 0.525 | 0.541 |
+| **XGBoost** | **0.638** | **0.556** | **0.594** |
+
+XGBoost selected as production model. Recall prioritized to minimize false negatives in health risk assessment.
+
 
 ### Feature Engineering
 - **Age grouping:** binned continuous age into categorical risk brackets
